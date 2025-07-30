@@ -31,7 +31,7 @@ public class PlusProblem2 {
     }
 }
 
-public class Solution {
+class Solution {
     public int sumInt(int a, int b) {
         return a + b;
     }
