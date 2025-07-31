@@ -8,7 +8,7 @@ import java.util.Scanner;
 //      如对于输入中的第二对a和b，在输出中它们的和应该也在第二行。
 
 
-public class PlusProblem3 {
+public class AddProblem3 {
 
     public static void main(String[] args) {
         Solution solution = new Solution();

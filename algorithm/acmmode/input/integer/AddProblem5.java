@@ -6,7 +6,7 @@ import java.util.Scanner;
 // 输出描述：对于每组输入，输出a和b的和，每行输出后接一个空行。
 
 
-public class PlusProblem4 {
+public class PlusProblem5 {
 
     public static void main(String[] args) {
 

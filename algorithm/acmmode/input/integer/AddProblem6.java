@@ -6,7 +6,7 @@ import java.util.Scanner;
 // 输出描述：对于每组输入，输出M个数的和，每组输出之间输出一个空行。
 
 
-public class PlusProblem4 {
+public class AddProblem6 {
 
     public static void main(String[] args) {
 

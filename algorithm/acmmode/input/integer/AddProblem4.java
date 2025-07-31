@@ -6,7 +6,7 @@ import java.util.Scanner;
 // 输出描述：对于每一行数据需要在相应的行输出和。
 
 
-public class PlusProblem4 {
+public class AddProblem4 {
 
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);

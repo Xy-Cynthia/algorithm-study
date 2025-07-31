@@ -9,7 +9,7 @@ import java.util.Scanner;
 // 提示信息：注意，测试数据不仅仅一组。也就是说，会持续输入N以及后面的a和b
 
 
-public class PlusProblem2 {
+public class AddProblem2 {
 
     public static void main(String[] args) {
         Solution solution = new Solution();
