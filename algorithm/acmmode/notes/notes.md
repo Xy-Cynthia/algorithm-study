@@ -1,9 +1,6 @@
 ## Get Input from Scanner utils
 
 ```java
-import com.sun.org.apache.xpath.internal.NodeSet;
-import com.sun.org.apache.xpath.internal.patterns.NodeTest;
-
 import java.util.Scanner;
 
 public class Main {
@@ -15,6 +12,7 @@ public class Main {
 
             boolean hasNext = in.hasNextInt(); // check the next int
             int a = in.nextInt(); // get the next int
+            int b = Integer.parseInt(in.nextLine());
         }
         
         while (in.hasNextLine()) {
