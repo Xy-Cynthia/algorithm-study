@@ -1,3 +1,5 @@
+package acmmode.input.string;
+
 import java.util.*;
 
 // problem: https://kamacoder.com/problempage.php?pid=1023
@@ -14,7 +16,7 @@ public class LongestCommonSubsequence {
 
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
-        Solution solution = new Solution();
+        SolutionLCS solution = new SolutionLCS();
 
         while (in.hasNextLine()) {
             String[] input = in.nextLine().split("\\s+");
@@ -23,7 +25,7 @@ public class LongestCommonSubsequence {
     }
 }
 
-class Solution {
+class SolutionLCS {
 
     public int longestCommonSubsequence(String s1, String s2) {
         int n = s1.length(), m = s2.length();

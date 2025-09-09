@@ -1,3 +1,5 @@
+package acmmode.input.integer;
+
 import java.util.Scanner;
 
 // problem: https://kamacoder.com/problempage.php?pid=1004
@@ -6,12 +8,12 @@ import java.util.Scanner;
 // 输出描述：对于每组输入，输出a和b的和，每行输出后接一个空行。
 
 
-public class PlusProblem5 {
+public class AddProblem5 {
 
     public static void main(String[] args) {
 
         Scanner in = new Scanner(System.in);
-        Solution solution = new Solution();
+        Solution5 solution = new Solution5();
 
         while (in.hasNextLine()) {
             int a = in.nextInt();
@@ -21,9 +23,8 @@ public class PlusProblem5 {
         }
     }
 }
-}
 
-class Solution {
+class Solution5 {
     public int sumInt(int a, int b) {
         return a + b;
     }

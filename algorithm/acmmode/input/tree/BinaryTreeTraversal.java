@@ -1,3 +1,6 @@
+package acmmode.input.tree;
+
+import acmmode.input.tree.TreeNode;
 import java.util.*;
 
 // problem: https://kamacoder.com/problempage.php?pid=1021
@@ -12,24 +15,12 @@ import java.util.*;
 // 输出描述：
 //  共三行，第一行为二叉树的前序遍历，第二行为中序遍历，第三行为后序遍历
 
-class TreeNode {
-    public char val;
-    public TreeNode left;
-    public TreeNode right;
-
-    public TreeNode(char val) {
-        this.val = val;
-        this.left = null;
-        this.right = null;
-    }
-}
-
 public class BinaryTreeTraversal {
 
     public static void main(String[] args) {
 
         Scanner in = new Scanner(System.in);
-        Solution solution = new Solution();
+        SolutionBTT solution = new SolutionBTT();
 
         while (in.hasNextLine()) {
             int n = in.nextInt();
@@ -67,7 +58,7 @@ public class BinaryTreeTraversal {
     }
 }
 
-class Solution {
+class SolutionBTT {
 
     public void preOrderTraversal(TreeNode root) {
         if (root == null) {

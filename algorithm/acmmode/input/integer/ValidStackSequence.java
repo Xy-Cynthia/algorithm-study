@@ -1,3 +1,5 @@
+package acmmode.input.integer;
+
 import java.util.*;
 
 // problem: https://kamacoder.com/problempage.php?pid=1016
@@ -13,7 +15,7 @@ public class ValidStackSequence {
 
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
-        Solution solution = new Solution();
+        SolutionVSS solution = new SolutionVSS();
 
         while (in.hasNextInt()) {
             int n = in.nextInt();
@@ -32,7 +34,7 @@ public class ValidStackSequence {
 }
 
 
-class Solution {
+class SolutionVSS {
 
     public boolean isValidSequence(int[] nums) {
         Deque<Integer> stack = new ArrayDeque<>();

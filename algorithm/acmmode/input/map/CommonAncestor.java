@@ -1,3 +1,5 @@
+package acmmode.input.map;
+
 import java.util.*;
 
 // problem: https://kamacoder.com/problempage.php?pid=1010

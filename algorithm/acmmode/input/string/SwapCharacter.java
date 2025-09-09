@@ -1,3 +1,5 @@
+package acmmode.input.string;
+
 import java.util.*;
 
 // problem: https://kamacoder.com/problempage.php?pid=1015
@@ -14,7 +16,7 @@ public class SwapCharacter {
 
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
-        Solution solution = new Solution();
+        SolutionSC solution = new SolutionSC();
 
         while (in.hasNextLine()) {
             int n = Integer.parseInt(in.nextLine());
@@ -27,7 +29,7 @@ public class SwapCharacter {
     }
 }
 
-class Solution {
+class SolutionSC {
 
     public String swap(String s) {
         char[] chars = s.toCharArray();

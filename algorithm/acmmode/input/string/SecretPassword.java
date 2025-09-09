@@ -1,3 +1,5 @@
+package acmmode.input.string;
+
 import java.util.*;
 
 // problem: https://kamacoder.com/problempage.php?pid=1014
@@ -15,7 +17,7 @@ public class SecretPassword {
 
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
-        Solution solution = new Solution();
+        SolutionSP solution = new SolutionSP();
 
         while (in.hasNext()) {
             int n = Integer.parseInt(in.nextLine());
@@ -32,7 +34,7 @@ public class SecretPassword {
     }
 }
 
-class Solution {
+class SolutionSP {
 
     public String buildPassword(String s1, String s2) {
         int n = s1.length();

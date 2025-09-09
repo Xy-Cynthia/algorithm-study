@@ -1,3 +1,7 @@
+package acmmode.input.list;
+
+import acmmode.input.list.ListNode;
+
 import java.util.*;
 
 // problem: https://kamacoder.com/problempage.php?pid=1018
@@ -15,7 +19,7 @@ public class RevertLinkedList {
     public static void main(String[] args) {
 
         Scanner in = new Scanner(System.in);
-        Solution solution = new Solution();
+        SolutionRLL solution = new SolutionRLL();
 
         while (in.hasNextInt()) {
             int n = in.nextInt();
@@ -49,7 +53,7 @@ public class RevertLinkedList {
     }
 }
 
-class Solution {
+class SolutionRLL {
 
     public ListNode revertList(ListNode head) {
         ListNode prev = null, curr = head, next = null;
@@ -79,16 +83,4 @@ class Solution {
 
         System.out.println();
     }
-}
-
-
-class ListNode {
-    public int val;
-    public ListNode next;
-
-    public ListNode(int val) {
-        this.val = val;
-        this.next = null;
-    }
-
 }

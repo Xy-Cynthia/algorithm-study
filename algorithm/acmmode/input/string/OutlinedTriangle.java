@@ -1,3 +1,5 @@
+package acmmode.input.string;
+
 import java.util.*;
 
 // problem: https://kamacoder.com/problempage.php?pid=1012
@@ -15,7 +17,7 @@ public class OutlinedTriangle {
     public static void main(String[] args) {
 
         Scanner in = new Scanner(System.in);
-        Solution solution = new Solution();
+        SolutionOT solution = new SolutionOT();
 
         while (in.hasNextLine()) {
             String s = in.next();
@@ -30,7 +32,7 @@ public class OutlinedTriangle {
     }
 }
 
-class Solution {
+class SolutionOT {
 
     public void printTriangle(String s, int n) {
         // n - i spaces, X, 2*(i-1) - 1 Spaces, X

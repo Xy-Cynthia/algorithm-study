@@ -1,3 +1,5 @@
+package acmmode.input.integer;
+
 import java.util.Scanner;
 
 // problem: https://kamacoder.com/problempage.php?pid=1009
@@ -14,7 +16,7 @@ public class TelecomPromotion {
     public static void main(String[] args) {
 
         Scanner in = new Scanner(System.in);
-        Solution solution = new Solution();
+        SolutionTP solution = new SolutionTP();
 
         while (in.hasNextLine()) {
             int m = in.nextInt();
@@ -29,7 +31,7 @@ public class TelecomPromotion {
     }
 }
 
-class Solution {
+class SolutionTP {
     public int getUsage(int money, int k) {
         int sum = money;
         while (money >= k) {

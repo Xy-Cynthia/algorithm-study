@@ -1,3 +1,5 @@
+package acmmode.input.integer;
+
 import java.util.*;
 
 // problem: https://kamacoder.com/problempage.php?pid=1011
@@ -12,7 +14,7 @@ public class PrintDiamond {
 
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
-        Solution solution = new Solution();
+        SolutionPD solution = new SolutionPD();
 
         while (in.hasNextInt()) {
             int n = in.nextInt();
@@ -24,7 +26,7 @@ public class PrintDiamond {
 }
 
 
-class Solution {
+class SolutionPD {
     public void printDiamond(int n) {
         // 2 * n - 1 line
         // for line i < n: has (n - 1 - i) space, number = 1...i...1

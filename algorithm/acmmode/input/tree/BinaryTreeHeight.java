@@ -1,3 +1,5 @@
+package acmmode.input.tree;
+
 import java.util.*;
 
 // problem: https://kamacoder.com/problempage.php?pid=1022
@@ -14,16 +16,24 @@ class TreeNode {
     public TreeNode left;
     public TreeNode right;
 
-    public TreeNode(char c) {
-        this.val = c;
+    public TreeNode(char val) {
+        this.val = val;
+        this.left = null;
+        this.right = null;
+    }
+
+    public TreeNode(char val, TreeNode left, TreeNode right) {
+        this.val = val;
+        this.left = left;
+        this.right = right;
     }
 }
 
-public class Main {
+public class BinaryTreeHeight {
 
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
-        Solution solution = new Solution();
+        SolutionBTH solution = new SolutionBTH();
 
         while (in.hasNextLine()) {
             int n = Integer.parseInt(in.nextLine());
@@ -38,7 +48,7 @@ public class Main {
     }
 }
 
-class Solution {
+class SolutionBTH {
 
     public TreeNode buildTree(String preOrder, String inOrder) {
         Map<Character, Integer> inOrderMap = new HashMap<>();

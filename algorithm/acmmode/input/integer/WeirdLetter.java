@@ -1,3 +1,5 @@
+package acmmode.input.integer;
+
 import java.util.Scanner;
 
 // problem: https://kamacoder.com/problempage.php?pid=1008
@@ -12,7 +14,7 @@ public class WeirdLetter {
 
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
-        Solution solution = new Solution();
+        SolutionWL solution = new SolutionWL();
 
         while (in.hasNextInt()) {
             int num = in.nextInt();
@@ -24,7 +26,7 @@ public class WeirdLetter {
     }
 }
 
-class Solution {
+class SolutionWL {
 
     public int sumEvenNumber(int num) {
         int res = 0;

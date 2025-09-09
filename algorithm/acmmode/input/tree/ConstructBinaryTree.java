@@ -1,3 +1,6 @@
+package acmmode.input.tree;
+
+import acmmode.input.tree.TreeNode;
 import java.util.*;
 
 // problem: https://kamacoder.com/problempage.php?pid=1020
@@ -8,11 +11,11 @@ import java.util.*;
 // 输出描述：
 //  对于每组输入，输出对应的二叉树的后续遍历结果。
 
-public class Main {
+public class ConstructBinaryTree {
 
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
-        Solution solution = new Solution();
+        SolutionCBT solution = new SolutionCBT();
 
         while (in.hasNextLine()) {
             String[] input = in.nextLine().split("\\s+");
@@ -28,7 +31,7 @@ public class Main {
     }
 }
 
-class Solution {
+class SolutionCBT {
 
     public void dfsPostOrder(TreeNode root) {
         if (root == null) {
@@ -73,23 +76,5 @@ class Solution {
 
         return new TreeNode(rootVal, leftNode, rightNode);
 
-    }
-}
-
-class TreeNode {
-    public char val;
-    public TreeNode left;
-    public TreeNode right;
-
-    public TreeNode(char val) {
-        this.val = val;
-        this.left = null;
-        this.right = null;
-    }
-
-    public TreeNode(char val, TreeNode left, TreeNode right) {
-        this.val = val;
-        this.left = left;
-        this.right = right;
     }
 }

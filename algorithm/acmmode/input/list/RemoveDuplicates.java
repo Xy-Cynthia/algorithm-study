@@ -1,3 +1,7 @@
+package acmmode.input.list;
+
+import acmmode.input.list.ListNode;
+
 import java.util.*;
 
 // problem: https://kamacoder.com/problempage.php?pid=1019
@@ -14,7 +18,7 @@ public class RemoveDuplicates {
 
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
-        Solution solution = new Solution();
+        SolutionRD solution = new SolutionRD();
 
         while (in.hasNextInt()) {
             int n = in.nextInt();
@@ -49,7 +53,7 @@ public class RemoveDuplicates {
     }
 }
 
-class Solution {
+class SolutionRD {
 
     public void print(ListNode head) {
         ListNode curr = head;
@@ -77,15 +81,4 @@ class Solution {
         }
     }
 
-}
-
-
-class ListNode {
-    public int val;
-    public ListNode next;
-
-    public ListNode(int val) {
-        this.val = val;
-        this.next = null;
-    }
 }

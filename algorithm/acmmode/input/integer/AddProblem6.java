@@ -1,3 +1,5 @@
+package acmmode.input.integer;
+
 import java.util.Scanner;
 
 // problem: https://kamacoder.com/problempage.php?pid=1005
@@ -11,7 +13,7 @@ public class AddProblem6 {
     public static void main(String[] args) {
 
         Scanner in = new Scanner(System.in);
-        Solution solution = new Solution();
+        Solution6 solution = new Solution6();
 
         while (in.hasNextInt()) {
             int lineCount = in.nextInt();
@@ -32,9 +34,9 @@ public class AddProblem6 {
         }
     }
 }
-}
 
-class Solution {
+
+class Solution6 {
     public int sumInt(int a, int b) {
         return a + b;
     }
